@@ -1,0 +1,90 @@
+/* ===== Bagian usaha: NSK Tour & Travel ===== */
+.biz {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 40px;
+  align-items: center;
+  padding: 36px;
+}
+
+.biz-photo {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 5;
+  margin: 0 auto;
+  border-radius: 140px 140px 24px 24px;
+  overflow: hidden;
+  box-shadow: -12px 12px 0 var(--yellow);
+}
+
+.biz-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
+.biz-logo {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 12px 18px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.biz-logo img {
+  display: block;
+  width: auto;
+  height: 64px;
+}
+
+.biz-role {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px 12px;
+  border: 1.5px solid var(--yellow);
+  border-radius: 999px;
+  color: var(--ytext);
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+.biz h3 {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+}
+
+.biz p {
+  margin: 0 0 12px;
+}
+
+.biz .biz-sub {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.biz .biz-note {
+  margin: 4px 0 20px;
+  padding-left: 14px;
+  border-left: 3px solid var(--yellow);
+  font-size: .92rem;
+}
+
+@media (max-width: 800px) {
+  .biz {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 24px;
+  }
+}
+
+.biz-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
